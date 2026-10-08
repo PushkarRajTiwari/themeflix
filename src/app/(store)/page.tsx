@@ -21,7 +21,7 @@ export default function Home() {
           Website templates that look finished on day one.
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-muted text-pretty">
-          Modern Next.js and Tailwind templates for startups, SaaS and AI products. Preview them live, buy once from{" "}
+          Modern Next.js and Tailwind templates for startups, online stores, dating apps and professional firms. Preview them live, buy once from{" "}
           {formatPrice(templates.find((t) => t.price > 0)?.price ?? 1900)}, or get everything for{" "}
           {formatPrice(yearly.price)} a year.
         </p>

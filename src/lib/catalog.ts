@@ -1,4 +1,4 @@
-export type Category = "SaaS" | "AI" | "Portfolio";
+export type Category = "SaaS" | "AI" | "Portfolio" | "Dating" | "E-commerce" | "Business";
 
 export type Template = {
   slug: string;
@@ -58,6 +58,66 @@ export const templates: Template[] = [
     colors: ["#a855f7", "#ec4899"],
   },
   {
+    slug: "kindred",
+    name: "Kindred",
+    tagline: "A warm, modern site for matrimony and dating apps",
+    description:
+      "Kindred is built for matchmaking, matrimony and dating products that want to feel trustworthy and romantic at once. It opens with a match search and a swipe-style profile collage, then walks visitors through matrimony and dating modes, hand-picked profiles, success stories, safety features with a chat mockup, and membership plans.",
+    category: "Dating",
+    price: 1900,
+    version: "1.0.0",
+    updated: "2026-10-08",
+    features: [
+      "Hero with match search and profile card collage",
+      "Matrimony and dating modes side by side",
+      "Profile cards with match score and verified badge",
+      "Success stories, safety section and phone chat mockup",
+      "Three-tier membership pricing",
+    ],
+    stack: ["Next.js 16", "React 19", "Tailwind CSS 4", "TypeScript"],
+    colors: ["#f43f5e", "#fb923c"],
+  },
+  {
+    slug: "mellow",
+    name: "Mellow",
+    tagline: "A boutique online store with a working cart",
+    description:
+      "Mellow is a direct-to-consumer storefront for beauty, wellness and lifestyle brands. It comes with a filterable product grid, a product spotlight with size and quantity pickers, a bundle offer, reviews and a slide-out cart that tracks quantities, subtotal and free-shipping progress. Product shots are drawn in CSS, so you can launch before your photos are ready.",
+    category: "E-commerce",
+    price: 1900,
+    version: "1.0.0",
+    updated: "2026-10-08",
+    features: [
+      "Slide-out cart with quantities and free-shipping bar",
+      "Product grid with category filters and quick add",
+      "Product spotlight with sizes and clinical results",
+      "Routine bundle, reviews summary and newsletter offer",
+      "Ready to wire to Stripe, Shopify or any backend",
+    ],
+    stack: ["Next.js 16", "React 19", "Tailwind CSS 4", "TypeScript"],
+    colors: ["#3f6b4f", "#e8b49a"],
+  },
+  {
+    slug: "meridian",
+    name: "Meridian",
+    tagline: "A sharp website for consulting and professional firms",
+    description:
+      "Meridian is made for consultancies, agencies, law and finance firms that need to look established from the first scroll. A bold dark hero with live-looking metrics leads into services, case studies with results, a step-by-step approach, leadership, insights and a contact section with an enquiry form and office locations.",
+    category: "Business",
+    price: 1900,
+    version: "1.0.0",
+    updated: "2026-10-08",
+    features: [
+      "Dark hero with metric cards and grid background",
+      "Numbered services list and case study cards",
+      "Process timeline, testimonial and team grid",
+      "Insights section for articles",
+      "Contact form with topic chips and office list",
+    ],
+    stack: ["Next.js 16", "React 19", "Tailwind CSS 4", "TypeScript"],
+    colors: ["#0b1020", "#84cc16"],
+  },
+  {
     slug: "folio",
     name: "Folio",
     tagline: "A clean one-page portfolio for makers",
@@ -79,7 +139,7 @@ export const templates: Template[] = [
   },
 ];
 
-export const categories: Category[] = ["SaaS", "AI", "Portfolio"];
+export const categories: Category[] = ["SaaS", "AI", "E-commerce", "Business", "Dating", "Portfolio"];
 
 export type Plan = {
   id: "all-access-yearly" | "all-access-lifetime";
