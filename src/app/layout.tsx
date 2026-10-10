@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s | Themeflix",
   },
   description:
-    "Beautiful, AI-ready Next.js and Tailwind website templates for startups, SaaS and AI products. Preview live, buy once, build anything.",
+    "Beautiful, AI-ready Next.js and Tailwind website templates for startups, online stores, dating apps and professional firms. Preview live, buy once, build anything.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
